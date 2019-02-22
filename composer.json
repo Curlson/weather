@@ -1,0 +1,28 @@
+{
+    "name": "curlson/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "curlson",
+            "email": "814801076@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+	    "Curlson\\Weather\\": "./src/"
+        }
+    },
+    "extra": {
+    	"laravel": {
+		"providers": [
+				"Curlson\\Weather\\ServiceProvider"
+			]
+		}
+    }
+}
